@@ -5,24 +5,20 @@
 }
 
 body {
-  background-image: url("https://images.unsplash.com/photo-1525815732237-469cdd9874ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=1955&q=80");
+  background-image: url("./img/preto.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   height: 100vh;
   color: #fff;
   font-family: "Lato", sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  /* */
   margin: 0;
   overflow: hidden;
 }
 
 /* Add a dark overlay */
-body::after {
+/* body::after {
   content: "";
   position: absolute;
   top: 0;
@@ -30,10 +26,59 @@ body::after {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-}
+} */
 
 body * {
   z-index: 1;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  margin-top: -40px;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: -20px;
+  transition: 0.3s;
+}
+header:hover {
+  margin-top: 0px;
+}
+
+nav {
+  display: flex;
+}
+
+ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+li {
+  width: 200px;
+  padding: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 10px;
+  font-weight: bold;
+  background-color: gray;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+li:hover {
+  opacity: 1;
 }
 
 h1 {
